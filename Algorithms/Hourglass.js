@@ -28,11 +28,17 @@ function hourglassSum(arr) {
                  hourglass.push(sum)
     
              }
-             // If New Array Hourglass length is Greater than Zero. Return the max value of the array; otherwise the value is Zero (0)
+             
          }
         console.log("ARRAY IS AN OBJECT");
         console.log(arr.length)
     }
      console.log("HOURGLASSS ARRAY",hourglass)
+     /* If New Array Hourglass length is Greater than Zero. 
+     Return the max value of the array; otherwise the value is Zero (0)*/
              return (hourglass.length > 0) ? Math.max(...hourglass) : 0;
+             /*if (hourglass.length > 0){
+                return Math.max(...hourglass) 
+            }
+           return 0 */
     }
