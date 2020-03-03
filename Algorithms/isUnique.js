@@ -1,7 +1,6 @@
 /* Is Unique: Implement an algorithm to determine if a string has all unique characters. 
 What if you cannot use additional data structures. */
 
-
 //(Without Addition data Structures)
 const isUnique = (str)=>{
 for (let i= 0; i < str.length; i++){
@@ -32,7 +31,7 @@ const isUnique2 =(str)=>{
     var booleanArr = [];
 
     for (let i =0; i< str.length; i++){
-        let value = str.charAt(i)
+        let value = str[i]
         //console.log(value)
         //Check to see if the any character exist the second time, Return False if it does
         if (booleanArr[value]){
