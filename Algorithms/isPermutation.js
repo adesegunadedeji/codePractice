@@ -31,15 +31,11 @@ function isPermutation(strA, strB){
 	}
 	//Get the map of characters and their occurences in strA
 	var charsMap = getMap(strA);
-	// var charsMap2 = getMap(strB);
-	// console.log(charsMap)
-	// console.log(charsMap2)
 	
 	//Check strB characters and occurences on the computed map.
 	for (var i = 0; i < strB.length; i++){
 		var charB = strB[i];
 		//console.log(charsMap[charB], "charsMAPCHARB")
-		
 		if (charsMap[charB] !== undefined && charsMap[charB] >= 1){
 			charsMap[charB]--; 
 			// If current character does appear in A and B, decrement the occurence counter.
@@ -52,6 +48,7 @@ function isPermutation(strA, strB){
 	return true;
 }
 
+//Map Function
 function getMap(str){
 	var map = {};
 	
