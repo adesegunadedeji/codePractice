@@ -18,14 +18,3 @@ const factorialTest = (n)=>{
 
 var answer = factorialTest(5)
 console.log(answer)
-
-
-//Sum Range of Value N
-function sumRange(num) {
-    if (num ==1) 
-    return 1;
-
-    return num +  sumRange(num -1)
-}
-
-console.log(sumRange(3));

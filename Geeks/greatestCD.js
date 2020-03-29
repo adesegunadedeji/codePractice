@@ -9,15 +9,15 @@ let num2 = 20;
 //         return greatestCommonDenominator(num2 % num, num)
 // }
 
-// function greatestCommonDenominator(a, b) {
-//     if(b === 0) {
-//         return a;
-//     }
+function greatestCommonDenominator(a, b) {
+    if(b === 0) {
+        return a;
+    }
 
-//     return greatestCommonDenominator(b, a%b);
-// }
+    return greatestCommonDenominator(b, a%b);
+}
 
-// console.log(greatestCommonDenominator(num, num2))
+console.log(greatestCommonDenominator(num, num2))
 
 // function gcd(a,b) 
 // { 

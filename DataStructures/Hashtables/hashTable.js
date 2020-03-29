@@ -1,10 +1,11 @@
 //HashFunction
 function hash(string, max) {
-    var hash = 17;
+    var hash = 0;
     for (let i = 0; i < string.length; i++){
         hash += string.charCodeAt(i);
     }
     return hash % max;
+     //divide by the numbner of bukets and return remainder
 }
 
 class HashTable {
@@ -14,6 +15,8 @@ class HashTable {
         this.print = function () {
             console.log(storage);
         };
+
+        //Methods for hashtable
         this.add = function (key, value) {
             var index = hash(key, storageLimit);
             if (storage[index] === undefined) {
@@ -31,6 +34,7 @@ class HashTable {
                 }
                 if (inserted === false) {
                     storage[index].push([key, value]);
+                    //Multiple entries into one bucket
                 }
             }
         };
@@ -65,8 +69,13 @@ class HashTable {
 
 let ht = new HashTable();
 ht.add('beau', 'person');
-console.log(ht)
+ht.add('fido', 'dog');
+ht.add('rex', 'dinosour');
+ht.add('tux', 'penguin');
+console.log(ht.lookup('tux'))
+ht.print();
+//console.log(ht)
 
-console.log(hash("adedeji", 10));
-console.log(hash("ade", 10));
+//console.log(hash("beau", 10));
+//console.log(hash("ade", 10));
 
