@@ -19,12 +19,12 @@ function cellCompete(states, days)
       
       
       let dayResult = [];
-      
       states.forEach((cellState, index)=>{
-          let leftVal = (index == 0) ? 0 : states [index -1] ;
-          let rightVal = (index == states.length -1)? 0: states[index+1];
+          let leftVal = (index == 0) ? 0 : grid [index -1] ;
+          let rightVal = (index == grid.length -1)? 0: grid[index+1];
           
           dayResult[index] = (leftVal==rightVal)? 0: 1;
+          console.log(dayResult);
           
           //if (index = 0) {
             //   left val = 0 else
@@ -37,3 +37,7 @@ function cellCompete(states, days)
    return states;
 }
 // FUNCTION SIGNATURE ENDS
+
+
+
+cellCompete(5, days);
