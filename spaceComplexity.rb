@@ -53,17 +53,3 @@
 #  y = -> { x + 1 }
 #  puts plus_1(y)  #2
 
-colors = ["red", "blue", "green"]
-def iterate_colors(colors)
-  # Your code here
-    arr = Array.new 
-    colors.each {|index| arr<< index}
-        return arr
-end
-
-# def iterate_colors(colors)
-#     return colors.to_a
-# end
-
-
-puts iterate_colors colors
