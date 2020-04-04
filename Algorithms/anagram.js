@@ -118,10 +118,11 @@ function makeAnagram(a, b){
     console.log(large_Diff, "LARGEDIFF")
     return (2*small_Diff)+ large_Diff;
    }
-   
 
    console.log(makeAnagram("abcsd", "abcd"))
 
+
+   console.log(5/2)
    
 
 

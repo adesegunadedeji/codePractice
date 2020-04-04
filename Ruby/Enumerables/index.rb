@@ -67,6 +67,3 @@ def sum_terms(n)
 
   puts #n
 
-  h = {"a" => 1, "b" => 2, "c" => 3}
-  puts h
-  puts h.none? {|key, value| key == "b"}
