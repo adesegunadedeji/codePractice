@@ -1,6 +1,4 @@
-let arr1=[1,2,3,4,5,6,7]
-let newIndex;
-let newArr = [];
+
 //Write a function rotate(ar[], d, n) that rotates arr[] of size n by d elements.
 
 rotatingArray =(arr,d )=>{
