@@ -34,6 +34,8 @@ function gcd(a, b) {
     return gcd(b, a%b);
 }
 
+
+
 function generalizedGCD2(num, arr)
 {
     factors = arr[0];

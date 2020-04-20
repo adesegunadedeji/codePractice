@@ -92,7 +92,7 @@ function makeAnagram(a, b){
    
    console.log(larger, "LARGER")
     //Create hash map; 
-    const storage = {}; //Empty Object to store variage. 
+    const storage = {}; //Empty Object to store variable. 
    
     //For loop to check elements of larger string // and to store characeter counts in the obj
     for (const element of larger){
@@ -121,8 +121,6 @@ function makeAnagram(a, b){
 
    console.log(makeAnagram("abcsd", "abcd"))
 
-
-   console.log(5/2)
    
 
 

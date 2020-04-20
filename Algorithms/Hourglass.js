@@ -6,7 +6,6 @@ in an array */
 function hourglassSum(arr) {
     let hourglass = [];
     
-    
     //Validate the array is an Object
     //Validate the length of the array equals 6
     //Validate that arr[row][col] = 36
@@ -16,7 +15,6 @@ function hourglassSum(arr) {
          for (let row=0; row <=3; row++){
              for (let col = 0; col <= 3; col++){
                  let sum = 0;
-    
                  sum += arr[row][col];
                  sum += arr[row][col+1];
                  sum += arr[row][col+2];
@@ -28,7 +26,6 @@ function hourglassSum(arr) {
                  hourglass.push(sum)
     
              }
-             
          }
         console.log("ARRAY IS AN OBJECT");
         console.log(arr.length)
