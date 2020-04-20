@@ -10,7 +10,7 @@ For each i from 0 to n - 1, b[i] = a[i - 1] + a[i] + a[i + 1].
  let n = 5;
  console.log(array_A, "INITIAL ARRAY");
  mutateArray=(arr, n)=>{
-     
+
     let b = [];
      for (let i =0; i < n; i++){
          let firstTerm = arr[i-1];
@@ -19,7 +19,7 @@ For each i from 0 to n - 1, b[i] = a[i - 1] + a[i] + a[i + 1].
          if (i-1 < 0){
              firstTerm = 0;
          }
-         else {thirdTerm = arr[i-1]}
+         else {firstTerm = arr[i-1]}
          if (i+1 >= n){
              thirdTerm = 0;
          }
