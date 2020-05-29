@@ -1,59 +1,61 @@
-// fibonacci= (n)=> {
-//     if (n==0){
-//         return 0;
-//     }
-//     if (n==1){
-//         return 1;
-//     }
-//     return fibonacci(n-1)+ fibonacci(n-2);
+// function fibonnaci(n){
+//   if (n === 0)
+//     return 0;
+  
+//   if(n === 1 || n === 2)
+//   return 1;
+
+//   return fibonnaci(n-1) + fibonnaci(n-2);
+
 // }
 
-// console.log(fibonacci(6));
+// function fibonnaci(n){
+//   if (n<=1)
+//     return n;
+//   return fibonnaci(n-1) + fibonnaci(n-2);
+// }
+
+// console.log(fibonnaci(40));
+
 
 //Memoization
 var fibonacci = (function() {
-    var memo = {};
-  
-    function f(n) {
-      var value;
-  
-      if (n in memo) {
-        value = memo[n];
-      } 
-      
-      else {
-        if (n <= 1)
-          value = n;
-        else
-          value = f(n - 1) + f(n - 2);
-  
-        memo[n] = value;
-      }
-  
-      return value;
+  //Memoization Technique
+  let lookup = [];
+
+  function f(n) {
+    var value;
+    if (n in lookup) {
+      value = lookup[n];
+    } 
+    else {
+      if (n <= 1)
+        value = n;
+      else
+        value = f(n - 1) + f(n - 2);
+      lookup[n] = value;
     }
-  
-    return f;
-  })();
+    return value;
+  }
 
-  var memoFib = ( function() {
-    let memo = {}
-     function fib(n) {
-      if (n in memo) { 
-          return memo[n]
-        }
-      else { 
-        if (n <= 1) { 
-            memo[n] = n 
-        } 
-        else { memo[n] = fib(n - 1) + fib(n - 2) } 
-        
-      }
-      return memo[n]
-    }
-    return fib;
-   })();
+  return f;
+})();
+console.log(fibonacci(40));
 
-console.log(fibonacci(50));
 
-console.log(memoFib(50));
+//Tabulation Technique
+
+// function fibonacciTest(n){
+//   f= [];
+//   f[0]= 0;
+//   f[1] = 1;
+// //   f[2] =1;
+
+//   for(let i = 2; i <= n; i++){
+//     f[i] = result = f[i-1] + f[i-2];
+//   }
+
+// return f[n] ;
+// }
+
+//  console.log(fibonacciTest(40));
