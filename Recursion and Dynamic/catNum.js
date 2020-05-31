@@ -12,18 +12,18 @@
 // console.log(catalanNum(5))
 
 
-catNum = (n)=>{
-    let catArr = [];
-    catArr[0]=1;
-    catArr[1]=1;
+// catNum = (n)=>{
+//     let catArr = [];
+//     catArr[0]=1;
+//     catArr[1]=1;
     
-    for(let i = 2; i<=n ; i++){
-        catArr[i] = 0;
-       for(let j = 0; j < i; j++){
-           catArr[i]+= catArr[j] *catArr[i-j-1];
-       }
-    }
-    return catArr[n];
-}
+//     for(let i = 2; i<=n ; i++){
+//         catArr[i] = 0;
+//        for(let j = 0; j < i; j++){
+//            catArr[i]+= catArr[j] *catArr[i-j-1];
+//        }
+//     }
+//     return catArr[n];
+// }
 
-console.log(catNum(4));
+// console.log(catNum(4));
