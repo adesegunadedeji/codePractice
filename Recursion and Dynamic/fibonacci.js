@@ -19,28 +19,28 @@
 
 
 //Memoization
-var fibonacci = (function() {
-  //Memoization Technique
-  let lookup = [];
+// var fibonacci = (function() {
+//   //Memoization Technique
+//   let lookup = [];
 
-  function f(n) {
-    var value;
-    if (n in lookup) {
-      value = lookup[n];
-    } 
-    else {
-      if (n <= 1)
-        value = n;
-      else
-        value = f(n - 1) + f(n - 2);
-      lookup[n] = value;
-    }
-    return value;
-  }
+//   function f(n) {
+//     var value;
+//     if (n in lookup) {
+//       value = lookup[n];
+//     } 
+//     else {
+//       if (n <= 1)
+//         value = n;
+//       else
+//         value = f(n - 1) + f(n - 2);
+//       lookup[n] = value;
+//     }
+//     return value;
+//   }
 
-  return f;
-})();
-console.log(fibonacci(40));
+//   return f;
+// })();
+// console.log(fibonacci(40));
 
 
 //Tabulation Technique
