@@ -40,4 +40,4 @@ let memotripleStep =(function(){
 )();
 
 //console.log(tripleStep(50));
-console.log(memotripleStep(50));
+console.log(memotripleStep(7));
